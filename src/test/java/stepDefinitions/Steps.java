@@ -18,7 +18,6 @@ public class Steps {
 	   System.out.println("User is on request form page");
 	   rf=new RequestFormPage(driver);
 	}
-	
 
 	@When("Enter the FirstName as {string},LastName as {string},BusinessName as {string} and Email as {string}")
 	public void enter_the_first_name_as_last_name_as_business_name_as_and_email_as(String string, String string2, String string3, String string4) {
