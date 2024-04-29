@@ -33,7 +33,7 @@ public class BookStoreSteps {
 	public void i_send_a_get_request_to_endpoint(String endpoint) {
 		System.out.println("Started step: I send a GET request to endpoint");
 		response = restAssuredUtil.getRequest(endpoint);
-	//	System.out.println("Response of GET Request :" + response.asString());
+		//	System.out.println("Response of GET Request :" + response.asString());
 	}
 
 	@Then("I should receive a {int} status code")
@@ -49,20 +49,13 @@ public class BookStoreSteps {
 		String responseBody = response.getBody().asString();
 		Assert.assertTrue(responseBody.contains(expectedResult));
 	}
-	
-	@Given("want to execute API request")
-	public void want_to_execute_api_request() {
-		System.out.println("Started scenerio: Send a POST request to the specified endpoint");
-		System.out.println("Started step: I want to execute API request");
-		request = RestAssured.given();
-	}
 
 	@When("I send a POST request to endpoint {string} with request body:")
 	public void PostRequest(String endpoint, String requestBody) {
 		System.out.println("Started step: I send a POST request to endpoint with request body");
 		response = restAssuredUtil.postRequest(endpoint, requestBody);
-	//	System.out.println("RequestBody : " + requestBody);
-	//	System.out.println("Post request response :" + response.asString());
+		//	System.out.println("RequestBody : " + requestBody);
+		//	System.out.println("Post request response :" + response.asString());
 	}
 
 	@Then("should receive a {int} status code")
