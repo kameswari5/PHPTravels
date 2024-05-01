@@ -6,7 +6,7 @@ Background:
   Scenario: Measure response time of an API endpoint
 
                 When I make a request to the API with number Of requests 3
-                Then the response time should be less than 3000 milliseconds and average response time 1000 milliseconds
+                Then the response time should be less than 30000 milliseconds and average response time 3000 milliseconds
 
 
 

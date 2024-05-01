@@ -7,7 +7,6 @@ public class RestAssuredUtil {
 
     public  static String baseURI;
 
-
     public RestAssuredUtil(String baseURI) {
         this.baseURI= baseURI;
     }

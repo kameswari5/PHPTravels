@@ -1,9 +1,6 @@
 package stepDefinitions;
 
-import org.junit.Assert;
-
 import com.google.gson.JsonObject;
-
 import helper.JsonUtil;
 import helper.RestAssuredUtil;
 import io.cucumber.java.en.Given;
@@ -12,6 +9,7 @@ import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.junit.Assert;
 
 
 public class BookStoreSteps {
